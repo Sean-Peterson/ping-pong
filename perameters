@@ -1,0 +1,11 @@
+gather info from form
+is the info a number and only a number?
+if yes go on if no then alert that they  must only include whole numbers
+select that info in js
+convert that info into a list of individual numbers
+check that list for numbers divisible by 3
+change those numbers to "ping"
+check for the numbers divisible by 5
+change those to pong
+check for numbers divisible by 15
+change those to ping-pong
