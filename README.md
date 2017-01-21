@@ -1,21 +1,17 @@
-# _MadLib_
+# _Ping Pong_
 
-#### _It's just like the MadLibs you grew up with, 01.11.17_
+#### _A ping pong web app_
 
 #### By _**Sean Peterson**_
 https://github.com/Sean-Peterson
 
 ## Description
 
-_This is a single MadLib page. The page prompts the user to input terms and then populates a story based on pre-set input and user input._
+_A web app that will turn a number into a game of ping pong._
 
 ## Setup/Installation Requirements
 
-* _clone this repository_
-* _Open a simple HTTP server in the top level of the cloned directory. For mac run the following command in your terminal:_
-* _open index.html_
-* _Command for PC:_
-* _start index.html_
+* _Clone this repository and open index.html in your browser. If you would rather use the commandline then change directory into the top level of the cloned repository and then, for mac run the following command in your terminal: open index.html. For a PC run start index.html"._
 
 ## Known Bugs
 
@@ -28,8 +24,6 @@ _If you run into any problems then let me know or feel free to contribute to the
 ## Technologies Used
 
 _HTML_
-_css_
-_Bootstrap_
 _JavaScipt_
 _jQuery_
 
