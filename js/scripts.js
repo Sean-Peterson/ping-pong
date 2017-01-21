@@ -1,40 +1,39 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    var userInput = $("#userInput").val()
-    var outPut = endFunction(userInput);
-    $("#results").append(numberChecker);
+    var number = $("#userInput").val();
+    var nArray = array(number);
+    nArray.forEach(function(n) {
+      if (n % 3 === 0 && n % 5 === 0){
+        n = "ping-pong";
+        $("#results").append("<li>"+n+"</li>");
+      } else if (n % 5 === 0) {
+          n = "pong";
+          $("#results").append("<li>"+n+"</li>");
+      } else if (n % 3 === 0) {
+          n = "ping";
+          $("#results").append("<li>"+n+"</li>");
+      } else {
+          $("#results").append("<li>"+n+"</li>");
+      }
+    });
+
+    // var change = changer(nArray);
   });
 
-  var endFunction = function(n) {
-    var number = "";
+  var array = function(n) {
+    var ar = [];
     for(var i = 1; i <= n; i += 1) {
-      number = number += i + " ";
+      ar = ar.concat([i]);
     };
-    number = number.split(' ')
-    var threes = numberChecker(number);
+    return ar;
   };
 
-  var numberChecker = function(nArray) {
-    var number = nArray;
-    var ping = "ping";
-    var pong = "pong";
-    var pingpong= "pingpong"
-    alert(number)
-    for(var i = 1; i < number.length; i += 1){
-      if (number[i] % 3 === 0 && number[i] % 5 === 0) {
-        number.splice(number[i]-1,1,pingpong);
-        alert(number);
-      } else if (number[i] % 3 === 0) {
-        number.splice(number[i]-1,1,ping);
-        alert(number);
-      }
-      else if(number[i] % 5 === 0) {
-        number.splice(number[i]-1,1,pong);
-        alert(number);
-      };
-    }
-  };
+  // var changer = function(n) {
+  //   for(var i = 1; i <= n; i += 1)  {
+  //     if (n[i] % 3 ==== 0 && n[i] % 5 ==== 0)
+  //     n[i].slice(n[i],1,"ping-pong")
+  //   }
+  // }
+
 });
-
-//This is as far close as I could get. I have been working since since 8 am with about 30 mins of breaks total. I'm pretty discouraged. I feel like I'm close but don't quite understood. The week of learning from home made me fall behind. I didn't get the material and couldn't learn it on my own, apparently. :(
