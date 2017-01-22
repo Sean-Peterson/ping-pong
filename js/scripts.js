@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
+    $("span").removeAttr();
     $("#list").show();
     $("#explanation").show();
     var number = $("#userInput").val();
