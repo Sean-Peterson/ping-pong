@@ -3,6 +3,7 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     $("#list").show();
+    $("#explanation").show();
     var number = $("#userInput").val();
     var nArray = array(number);
     nArray.forEach(function(n) {

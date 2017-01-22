@@ -49,3 +49,14 @@ ul.regular li {
   text-align: center;
   color: white;
 }
+
+#explanation {
+  text-align: center;
+  font-size: .75em;
+  background-color: darkseagreen;
+  display: none;
+}
+
+#explanation ul {
+  list-style-type: none;
+}
