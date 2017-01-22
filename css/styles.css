@@ -1,6 +1,28 @@
 body {
   font-family: helvetica;
-  background-color: forestgreen;
+  background-color: oldlace;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: darkseagreen;
+}
+
+#userInput {
+  background-color: oldlace;
+}
+
+.btn {
+  background-color: oldlace;
+}
+
+#list {
+    background-color: darkseagreen;
+}
+
+ul {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 ul.regular {
@@ -15,12 +37,15 @@ ul.regular li {
 .ping {
   list-style-type: none;
   text-align: left;
+  color: hotpink;
 }
 .pong {
   list-style-type: none;
   text-align: right;
+  color: skyblue;
 }
 .ping-pong {
   list-style-type: none;
   text-align: center;
+  color: white;
 }

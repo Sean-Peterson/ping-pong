@@ -1,6 +1,8 @@
 $(document).ready(function() {
+  $("#list").hide();
   $("form").submit(function(event) {
     event.preventDefault();
+    $("#list").show();
     var number = $("#userInput").val();
     var nArray = array(number);
     nArray.forEach(function(n) {
@@ -17,9 +19,8 @@ $(document).ready(function() {
           $("#regular").append("<li>"+n+"</li>" + " ");
       }
     });
-
-    // var change = changer(nArray);
   });
+
 
   var array = function(n) {
     var ar = [];
@@ -28,12 +29,4 @@ $(document).ready(function() {
     };
     return ar;
   };
-
-  // var changer = function(n) {
-  //   for(var i = 1; i <= n; i += 1)  {
-  //     if (n[i] % 3 ==== 0 && n[i] % 5 ==== 0)
-  //     n[i].slice(n[i],1,"ping-pong")
-  //   }
-  // }
-
 });
