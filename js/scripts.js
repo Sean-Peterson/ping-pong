@@ -6,15 +6,15 @@ $(document).ready(function() {
     nArray.forEach(function(n) {
       if (n % 3 === 0 && n % 5 === 0){
         n = "ping-pong";
-        $("#results").append("<li>"+n+"</li>");
+        $("#ping-pong").append("<li>"+n+"</li>");
       } else if (n % 5 === 0) {
           n = "pong";
-          $("#results").append("<li>"+n+"</li>");
+          $("#pong").append("<li>"+n+"</li>");
       } else if (n % 3 === 0) {
           n = "ping";
-          $("#results").append("<li>"+n+"</li>");
+          $("#ping").append("<li>"+n+"</li>");
       } else {
-          $("#results").append("<li>"+n+"</li>");
+          $("#regular").append("<li>"+n+"</li>" + " ");
       }
     });
 

@@ -1,0 +1,26 @@
+body {
+  font-family: helvetica;
+  background-color: forestgreen;
+}
+
+ul.regular {
+  text-align: center;
+}
+
+ul.regular li {
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+}
+.ping {
+  list-style-type: none;
+  text-align: left;
+}
+.pong {
+  list-style-type: none;
+  text-align: right;
+}
+.ping-pong {
+  list-style-type: none;
+  text-align: center;
+}
