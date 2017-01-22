@@ -17,6 +17,7 @@ body {
 }
 
 #list {
+    display: none;
     background-color: darkseagreen;
 }
 

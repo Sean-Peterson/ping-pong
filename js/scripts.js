@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  $("#list").hide();
   $("form").submit(function(event) {
     event.preventDefault();
     $("#list").show();
