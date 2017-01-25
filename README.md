@@ -9,12 +9,15 @@ https://github.com/Sean-Peterson
 
 _A web app that will turn a number into a game of ping pong._
 
-## Logic
+## Specs
 
-* _Gather user input from user interface_
-* _Convert input into array numbers counting up to value of input_
-* _Is the number divisible by: 15 replace with ping-pong; 5 replace with pong; 3 replace with ping_
-* _Return new array in list form to user interface_
+* _Scope: Take a user inputted number, make into numbered array from 1 to X, change numbers evenly divisible by 3 and 5 to ping-pong, change numbers evenly divisible by 5 to pong, and change numbers evenly divisible by 3 to ping. After the transformation, display results back to user in a list form._
+* _Input: User inputted whole integer. Output: X_
+* _Convert X into array numbers counting from 1 to X. Output: [1 to X]_
+* _Input: y = [1 to X] Output: if n of Y % 3 = 0 and n of Y % 5 = 0 then replace with ping-pong_
+* _Input: y = [1 to X] Output: if n of Y % 5 = 0 then replace with pong_
+* _Input: y = [1 to X] Output: if n of Y % 3 = 0 then replace with ping_
+* _Input: array of numbers and words. Output: List of numbers and words from 1 to X with replaced values._
 
 ## Setup/Installation Requirements
 
