@@ -1,42 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ping-Pong</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.js"
-      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-      crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Ping Pong</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Wanna Play Some PONG?!?!</h1>
-        <form class="form-group">
-          <label>Can you decode how this game works?</label><br>
-          <input type="text" id="userInput" placeholder="Insert a number here">
-          <button type="submit" class="btn">PLAY PONG!</button>
-        </form>
-      </div>
-      <div class="well" id="list">
-        <div class="row">
-          <ul class="output">
-
-          </ul>
-        </div>
-      </div>
-      <div class="well" id="explanation">
-      <div>
-        <h2>Heres how it works</h2>
-        <ul>
-          <li>transform the number you entered into a list of numbers from 1 to your number</li>
-          <li>numbers divisible by 3 are replaced with ping</li>
-          <li>numbers divisible by 5 are replaced with pong</li>
-          <li>numbers divisible by 3 and 5 are replaced with ping-pong</li>
-        </ul>
-      </div>
-    </div>
+    <form id="ping-pong-form">
+      <label for="goal">Enter a number:</label>
+      <input id="goal" type="number">
+      <button type="submit">Submit</button>
+    </form>
+    <form id="signup">
+      <label for="email">Enter your email:</label>
+      <input id="email" type="text">
+      <button type="submit">Submit</button>
+    </form>
+    <ul id="solution"></ul>
   </body>
 </html>
