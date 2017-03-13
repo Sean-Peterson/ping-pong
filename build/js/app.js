@@ -17,15 +17,47 @@ Calculator.prototype.pingPong = function(goal) {
     }
   }
   return output;
-}
+};
+
+Calculator.prototype.math = function(n1,n2,operand) {
+  var result;
+  if (operand == 1) {
+    result = n1 + n2;
+    alert("working")
+  } else if(operand == 2) {
+    result = n1 - n2;
+  } else if(operand == 3) {
+    result = n1 * n2;
+  } else if(operand == 4) {
+    result = n1 / n2;
+  }
+  return result;
+};
 
 exports.calculatorModule = Calculator;
 
 },{}],2:[function(require,module,exports){
-var Calculator = require('./../js/pingpong.js').calculatorModule;
+//requirements
+var Calculator = require('./../js/calculator.js').calculatorModule;
 
+//jquery for math
+$(document).ready(function() {
+  $('#math').submit(function(event) {
+    event.preventDefault();
+    var n1 = parseInt($('#n1').val());
+    console.log(n1);
+    var n2 = parseInt($('#n2').val());
+    var operand = $('#operand').val();
+    var newCalculator = new Calculator ("blue");
+    var output = newCalculator.math(n1,n2,operand);
+    $('#math-result').append(output);
+  });
+});
 
+//requirements
+// var Calculator = require('./../js/calculator.js').calculatorModule;
 
+//jquery for pingpong
 $(document).ready(function() {
   $('#ping-pong-form').submit(function(event) {
     event.preventDefault();
@@ -47,4 +79,4 @@ $(document).ready(function(){
   });
 });
 
-},{"./../js/pingpong.js":1}]},{},[2]);
+},{"./../js/calculator.js":1}]},{},[2]);

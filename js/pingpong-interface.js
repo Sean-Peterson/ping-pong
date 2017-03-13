@@ -1,7 +1,7 @@
-var Calculator = require('./../js/pingpong.js').calculatorModule;
+//requirements
+// var Calculator = require('./../js/calculator.js').calculatorModule;
 
-
-
+//jquery for pingpong
 $(document).ready(function() {
   $('#ping-pong-form').submit(function(event) {
     event.preventDefault();
