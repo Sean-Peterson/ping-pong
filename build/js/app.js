@@ -23,7 +23,6 @@ Calculator.prototype.math = function(n1,n2,operand) {
   var result;
   if (operand == 1) {
     result = n1 + n2;
-    alert("working")
   } else if(operand == 2) {
     result = n1 - n2;
   } else if(operand == 3) {
@@ -45,11 +44,11 @@ $(document).ready(function() {
   $('#math').submit(function(event) {
     event.preventDefault();
     var n1 = parseInt($('#n1').val());
-    console.log(n1);
     var n2 = parseInt($('#n2').val());
     var operand = $('#operand').val();
     var newCalculator = new Calculator ("blue");
     var output = newCalculator.math(n1,n2,operand);
+    $('#math-result').empty();
     $('#math-result').append(output);
   });
 });
@@ -77,6 +76,10 @@ $(document).ready(function(){
     $('#signup').hide();
     $('#solution').prepend('<p>Thank you, ' + email + ' has been added to our list!</p>');
   });
+});
+
+$(function() {
+  $('#time').text(moment());
 });
 
 },{"./../js/calculator.js":1}]},{},[2]);

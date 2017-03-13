@@ -22,7 +22,6 @@ Calculator.prototype.math = function(n1,n2,operand) {
   var result;
   if (operand == 1) {
     result = n1 + n2;
-    alert("working")
   } else if(operand == 2) {
     result = n1 - n2;
   } else if(operand == 3) {
